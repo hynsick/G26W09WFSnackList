@@ -8,7 +8,7 @@ public record Snack(
     string Image
 )
 {
-    [(1)]
+    [Key] // (1)
     public int Id { get; init; }
 
     public override string ToString() => $"[{Name}] {Reason}";
